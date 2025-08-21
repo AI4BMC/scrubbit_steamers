@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Phone, MapPin, Calendar, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,12 +16,12 @@ const Navigation = () => (
           </h1>
         </div>
         <div className="hidden md:flex space-x-8">
-          <a href="/" className="text-foreground hover:text-primary transition-colors">Home</a>
-          <a href="/services" className="text-foreground hover:text-primary transition-colors">Services</a>
-          <a href="/portfolio" className="text-foreground hover:text-primary transition-colors">Portfolio</a>
-          <a href="/marina-days" className="text-foreground hover:text-primary transition-colors">Marina Days</a>
-          <a href="/service-area" className="text-foreground hover:text-primary transition-colors">Service Area</a>
-          <a href="/booking" className="text-foreground hover:text-primary transition-colors">Book Now</a>
+          <Link to="/" className="text-foreground hover:text-primary transition-colors">Home</Link>
+          <Link to="/services" className="text-foreground hover:text-primary transition-colors">Services</Link>
+          <Link to="/portfolio" className="text-foreground hover:text-primary transition-colors">Portfolio</Link>
+          <Link to="/marina-days" className="text-foreground hover:text-primary transition-colors">Marina Days</Link>
+          <Link to="/service-area" className="text-foreground hover:text-primary transition-colors">Service Area</Link>
+          <Link to="/booking" className="text-foreground hover:text-primary transition-colors">Book Now</Link>
         </div>
         <div className="flex items-center space-x-2">
           <Phone className="h-4 w-4 text-primary" />
